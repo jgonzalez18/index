@@ -3,6 +3,22 @@
 <head>
 	<meta charset="UTF-8">
 	<title>My First Page</title>
+	<style>
+		i{
+			color:blue;
+		}
+		.leftCol{background-color: beige;}
+		
+		#listedMediums{
+			font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif"; 
+			color:red;}
+		
+	
+	.AcrylicPaint {
+}
+    </style>
+	
+	
 	</head>
 <body style= "background-color:bisque;">
 	<h1 style="background-color:pink; color:blue;" >Hello World</h1>
@@ -24,27 +40,27 @@
 	</tr>
 	
 	<tr>
-		<td> Acrylic Paint </td>
+		<td class="leftCol"> Acrylic Paint </td>
 		<td> Very Easy </td>
 		<td>Very Satisfied </td>
 	</tr>
 	<tr>
-		<td> Watercolor </td>
+		<td class="leftCol"> Watercolor </td>
 		<td> Somewhat Difficult </td>
 		<td> Somewhat Satisfied </td>
 	</tr>
 	
 	<tr>
-		<td>Scrath-off Paint</td>
+		<td class="leftCol">Scrath-off Paint</td>
 		<td>Somewhat Difficult</td>
 		<td>Very Satisifed</td>
 	</tr>
 	
 	</table>
 	
-			<h2>All the Mediums I have used:</h2>
+			<h2 id="listedMediums">All the Mediums I have used:</h2>
 			<ul>
-				<li>Acrylic Paint</li>
+				<li id="BeginnerPaint">Acrylic Paint</li>
 				<li>Sratch-off Paint</li>
 				<li>Oil Paint</li>
 				<li>Pastels</li>
@@ -61,4 +77,7 @@
 	
 	
 	</body>
+		<script>
+	document.getElementById("BeginnerPaint").innerHTML = "Acrylic Paint";
+	</script>
 </html>
